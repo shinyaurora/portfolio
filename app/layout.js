@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Particle />
-        <div className="w-full h-screen bg-change">
+        <div className="w-full h-screen bg-change relative">
           <Header />
           {children}
         </div>

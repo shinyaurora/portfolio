@@ -1,17 +1,30 @@
+"use client"
+
+import { TypeAnimation } from "react-type-animation";
+
 export default function Home() {
+
   return (
-    <section className="p-4">
-      <div className="container">
-        <h1 className="text-2xl font-bold">Home Page</h1>
-        <p className="w-1/2 font-medium py-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          natus minima exercitationem perferendis hic maxime nihil officia
-          fugit, illo asperiores fugiat odit harum, dicta cumque ad atque
-          assumenda! Saepe dolores repellendus animi harum ex voluptatibus
-          quaerat unde obcaecati quo consequuntur sequi, autem deleniti?
-          Eligendi ipsa impedit cupiditate accusantium delectus quidem.
-        </p>
-      </div>
-    </section>
+    <div className="text-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center border-b-4">
+      <div className="text-[36px] font-bold">I am a </div>
+      <TypeAnimation
+        sequence={[
+          1000,
+          '" Full-Stack Developer "', // Types 'One'
+          3000, // Waits 1s
+          '" Passionate Developer "', // Deletes 'One' and types 'Two'
+          3000, // Waits 2s
+          '" Talented Developer "', // Types 'Three' without deleting 'Two'
+          3000,
+          () => {
+            console.log('Sequence completed');
+          },
+        ]}
+        wrapper="span"
+        cursor={true}
+        repeat={Infinity}
+        style={{ fontSize: '3em', display: 'inline-block', fontWeight: 900 }}
+      />
+    </div>
   );
 }
