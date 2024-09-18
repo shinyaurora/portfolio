@@ -23,10 +23,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Freelancer of NightSky</title>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Particle />
+        {/* <Particle /> */}
         <div className="w-full h-screen bg-change relative">
           <Header />
           {children}

@@ -53,3 +53,30 @@ canvas {
     background-color: rgba(0, 0, 0, 0.2);
   }
 }
+
+@media screen and (min-width: 996px) {
+  .index-module_type__E-SaG {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 996px) {
+  .index-module_type__E-SaG {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .index-module_type__E-SaG {
+    font-size: 20px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: rgb(17, 20, 29);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4c5a88;
+}

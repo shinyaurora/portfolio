@@ -25,33 +25,30 @@ export default function Header() {
         {
             url: "/portfolio",
             title: "Portfolio"
-        },
-        {
-            url: "/testtominal",
-            title: "Testominal"
-        },
-        {
-            url: "/contact",
-            title: "Contact"
         }
     ]
 
     return (
         <header>
-            <div className="flex items-center px-8 py-4">
-                <Link href="/">
-                    <Image src={Logo} width={50} height={50} />
-                </Link>
+            <div className="flex items-center flex-col sm:flex-row px-8 py-8 sm:py-4 min-w-max">
+                <div className="mb-4 sm:md-0">
+                    <Link href="/">
+                        <Image src={Logo} width={50} height={50} />
+                    </Link>
+                </div>
                 <div className="grow" />
-                {
-                    links.map(item => {
-                        return (
-                            <Link href={item.url} className="text-white/70 hover:text-white px-4 cursor-pointer text-sm font-bold" key={item.url}>
-                                <span>{item.title}</span>
-                            </Link>
-                        )
-                    })
-                }
+                <div className="flex items-center">
+                    {
+                        links.map(item => {
+                            return (
+                                <Link href={item.url} className="text-white/70 hover:text-white px-4 cursor-pointer text-sm font-bold" key={item.url}>
+                                    <span>{item.title}</span>
+                                </Link>
+                            )
+                        })
+                    }
+                </div>
+                <div className="grow block sm:hidden" />
             </div>
         </header>
     );
