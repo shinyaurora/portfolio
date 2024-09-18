@@ -49,6 +49,9 @@ export default function Home() {
 
   return (
     <Fragment>
+      <head>
+        <title>Freelancer of NightSky</title>
+      </head>
       <div className="text-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full">
         <div className="text-[24px] md:text-[36px] font-bold ">I am a </div>
         <TypeAnimation
