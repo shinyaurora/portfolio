@@ -1,6 +1,9 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
+import Header from "@/components/common/header";
+import Particle from "@/components/common/particle";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -23,7 +26,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Particle />
+        <div className="w-full h-screen bg-change">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
