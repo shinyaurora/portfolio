@@ -9,7 +9,7 @@ const Portfolio = () => {
                 {
                     PORTFOLIO_DATA.map(item => {
                         return (
-                            <Link href={item.url} target="_blank">
+                            <Link href={item.url} target="_blank" key={item.url}>
                                 <div className="port-item col-span-1 overflow-hidden relative rounded-lg border-2 cursor-pointer" key={item.url} >
                                     <div className="img">
                                         <Image src={item.img} alt={item.description} className="rounded-lg hover:scale-125 transition-all duration-500" />

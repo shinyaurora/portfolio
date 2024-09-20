@@ -8,13 +8,10 @@ import { Fragment, useCallback, useEffect, useMemo, useState } from "react";
 
 export default function Home() {
     const particlesInitCb = useCallback(async (engine) => {
-        console.log("callback");
-
         await loadLinksPreset(engine);
     }, []);
 
     const particlesLoaded = useCallback((container) => {
-        console.log("loaded", container);
     }, []);
 
     const [init, setInit] = useState(false);
