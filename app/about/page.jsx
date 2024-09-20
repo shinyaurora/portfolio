@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import { ImLocation, ImPhone, ImAddressBook, ImCalendar } from "react-icons/im";
 import Logo from "../../assets/avatar.png";
@@ -5,11 +7,6 @@ import Test1 from "../../assets/test1.jpg";
 import Test2 from "../../assets/test2.jpg";
 import Test3 from "../../assets/test3.jpg";
 import { Fragment } from "react";
-
-export const metadata = {
-    title: 'About Me',
-    description: 'Learn more about me',
-};
 
 const About = () => {
     const testominols = [
