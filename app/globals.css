@@ -80,3 +80,7 @@ canvas {
 ::-webkit-scrollbar-thumb {
   background-color: #4c5a88;
 }
+
+.port-item:hover .description {
+  bottom: 0px;
+}
