@@ -37,7 +37,7 @@ const About = () => {
         <Fragment>
             <div className="container px-8 mx-auto pb-4">
                 <div className="flex flex-col md:flex-row">
-                    <div className="p-8 w-full md:w-96 rounded-md bg-[#22272c] flex flex-col items-center">
+                    <div className="p-8 w-full md:w-96 rounded-md bg-black/60 border flex flex-col items-center">
                         <div className="rounded-full h-[140px] bg-white">
                             <Image width={140} height={140} src={Logo} alt="logo" className="rounded-full" />
                         </div>
@@ -61,7 +61,7 @@ const About = () => {
                             <span className="text-sm font-bold">+1 (901) 213 8762</span>
                         </div>
                     </div>
-                    <div className="p-8 flex-none md:flex-1 my-4 md:my-0 bg-[#22272c] rounded-md md:ml-4">
+                    <div className="p-8 flex-none md:flex-1 my-4 md:my-0 bg-black/60 border rounded-md md:ml-4">
                         <div className="text-wrap mb-8">
                             <h4 className="text-white text-xl font-black border-b-2 w-max mb-2">About Me</h4>
                             <p className="text-white text-sm my-2 indent-4">
@@ -79,7 +79,7 @@ const About = () => {
                             {
                                 testominols.map(item => {
                                     return (
-                                        <div className="col-span-1 bg-[#050817] rounded-xl p-8 flex flex-col justify-between" key={item.name}>
+                                        <div className="col-span-1 bg-[#050817] border rounded-xl p-8 flex flex-col justify-between" key={item.name}>
                                             <p className="text-white indent-2 mb-4">
                                                 {item.letter}
                                             </p>
