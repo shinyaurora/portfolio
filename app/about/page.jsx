@@ -1,12 +1,14 @@
 "use client"
 
 import Image from "next/image";
-import { ImLocation, ImPhone, ImAddressBook, ImCalendar } from "react-icons/im";
+import { ImLocation, ImPhone, ImAddressBook, ImCalendar, ImDownload } from "react-icons/im";
 import Logo from "../../assets/avatar.png";
 import Test1 from "../../assets/test1.jpg";
 import Test2 from "../../assets/test2.jpg";
 import Test3 from "../../assets/test3.jpg";
 import { Fragment } from "react";
+
+import Link from "next/link";
 
 const About = () => {
     const testominols = [
@@ -56,6 +58,14 @@ const About = () => {
                         <div className="mt-3 w-full text-white flex items-center">
                             <ImPhone className="mr-2" />
                             <span className="text-sm font-bold">+1 (901) 213 8762</span>
+                        </div>
+                        <div className="mt-6 w-full px-4">
+                            <Link href="/Akatsuki_Founder_Resume.pdf" target="_blank">
+                                <div className="flex items-center justify-center text-white bg-red-500 py-2 rounded cursor-pointer hover:bg-red-700">
+                                    <ImDownload className="mr-2" />
+                                    <span className="text-sm font-bold">Resume</span>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                     <div className="p-8 flex-none md:flex-1 my-4 md:my-0 bg-black/60 border rounded-md md:ml-4">
