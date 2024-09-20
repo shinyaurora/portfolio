@@ -38,7 +38,7 @@ const About = () => {
             <div className="container px-8 mx-auto pb-4">
                 <div className="flex flex-col md:flex-row">
                     <div className="p-8 w-full md:w-96 rounded-md bg-black/60 border flex flex-col items-center">
-                        <div className="rounded-full h-[140px] bg-white">
+                        <div className="rounded-full h-[140px] w-[140px] border-4 bg-black flex items-center justify-center">
                             <Image width={140} height={140} src={Logo} alt="logo" className="rounded-full" />
                         </div>
                         <div className="mt-2 mb-4">
