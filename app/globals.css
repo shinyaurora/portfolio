@@ -32,7 +32,7 @@ body {
 }
 
 canvas {
-  background-color: transparent !important;
+  background: none !important;
   z-index: -1;
 }
 

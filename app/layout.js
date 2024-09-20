@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import 'react-vertical-timeline-component/style.min.css';
 
 import Header from "@/components/common/header";
 import Particle from "@/components/common/particle";
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Particle />
-        <div className="w-full h-screen bg-change relative">
+        <div className="w-full h-screen bg-change relative overflow-auto pb-4">
           <Header />
           {children}
         </div>

@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -33,7 +35,7 @@ export default function Header() {
             <div className="flex items-center flex-col sm:flex-row px-8 py-8 sm:py-4 min-w-max">
                 <div className="mb-4 sm:md-0">
                     <Link href="/">
-                        <Image src={Logo} width={50} height={50} />
+                        <Image src={Logo} width={50} height={"auto"} alt="Logo" />
                     </Link>
                 </div>
                 <div className="grow" />

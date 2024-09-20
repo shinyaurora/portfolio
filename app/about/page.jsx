@@ -7,7 +7,7 @@ import Test3 from "../../assets/test3.jpg";
 import { Fragment } from "react";
 
 export const metadata = {
-    title: 'About Us',
+    title: 'About Me',
     description: 'Learn more about me',
 };
 
@@ -15,19 +15,19 @@ const About = () => {
     const testominols = [
         {
             avatar: Test1,
-            letter: "I thought it was impossible to make a website as beautiful as our product, but Hao Ming proved me wrong.",
+            letter: "I thought it was impossible to make a website as beautiful as our product, but Ethan Lee proved me wrong.",
             name: "Rajesh Venugopal",
             company: "Direct of Engineering @ Ingram Micro"
         },
         {
             avatar: Test2,
-            letter: "I've never met a web developer who truly cares about their clients' success like Hao Ming does.",
+            letter: "I've never met a web developer who truly cares about their clients' success like Ethan Lee does.",
             name: "Chris Brown",
             company: "Project Manager @ Dapper Labs"
         },
         {
             avatar: Test3,
-            letter: "After Hao Ming optimized our website, our traffic increased by 50%. We can't thank them enough!",
+            letter: "After Ethan Lee optimized our website, our traffic increased by 50%. We can't thank them enough!",
             name: "Alexei Gura",
             company: "CTO @ America's Frontline Doctors"
         }
@@ -35,14 +35,14 @@ const About = () => {
 
     return (
         <Fragment>
-            <div className="container px-8 mx-auto">
+            <div className="container px-8 mx-auto pb-4">
                 <div className="flex flex-col md:flex-row">
                     <div className="p-8 w-full md:w-96 rounded-md bg-[#22272c] flex flex-col items-center">
                         <div className="rounded-full h-[140px] bg-white">
                             <Image width={140} height={140} src={Logo} alt="logo" className="rounded-full" />
                         </div>
                         <div className="mt-2 mb-4">
-                            <span className="text-xl font-black text-white">Hao Ming</span>
+                            <span className="text-xl font-black text-white">Ethan Lee</span>
                         </div>
                         <div className="mt-3 w-full text-white flex items-center">
                             <ImAddressBook className="mr-2" />
@@ -50,11 +50,11 @@ const About = () => {
                         </div>
                         <div className="mt-3 w-full text-white flex items-center">
                             <ImLocation className="mr-2" />
-                            <span className="text-sm font-bold">Orchard Road, Singapore 238863</span>
+                            <span className="text-sm font-bold">60 Hillcrest Avenue Montreal, Canada</span>
                         </div>
                         <div className="mt-3 w-full text-white flex items-center">
                             <ImCalendar className="mr-2" />
-                            <span className="text-sm font-bold">July 28th 1999</span>
+                            <span className="text-sm font-bold">July 28th 1998</span>
                         </div>
                         <div className="mt-3 w-full text-white flex items-center">
                             <ImPhone className="mr-2" />
@@ -89,7 +89,7 @@ const About = () => {
                                                     <span className="text-sm text-white/60">{item.company}</span>
                                                 </div>
                                                 <div className="rounded-full ml-4">
-                                                    <Image width={40} height={40} className="rounded-full" src={item.avatar} />
+                                                    <Image width={40} height={40} className="rounded-full" src={item.avatar} alt="avatar" />
                                                 </div>
                                             </div>
                                         </div>
