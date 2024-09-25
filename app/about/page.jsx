@@ -57,10 +57,10 @@ const About = () => {
                         </div>
                         <div className="mt-3 w-full text-white flex items-center">
                             <ImPhone className="mr-2" />
-                            <span className="text-sm font-bold">+1 (901) 213 8762</span>
+                            <span className="text-sm font-bold">+1 928 485 4932</span>
                         </div>
                         <div className="mt-6 w-full px-4">
-                            <Link href="/Akatsuki_Founder_Resume.pdf" target="_blank">
+                            <Link href="/Cupidara.pdf" target="_blank">
                                 <div className="flex items-center justify-center text-white bg-red-500 py-2 rounded cursor-pointer hover:bg-red-700">
                                     <ImDownload className="mr-2" />
                                     <span className="text-sm font-bold">Resume</span>
